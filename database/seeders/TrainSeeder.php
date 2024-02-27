@@ -14,19 +14,18 @@ class TrainSeeder extends Seeder
      */
     public function run(): void
     {
-        Train::truncate();
-        for ($i=0; $i < 15; $i++) {
+       
+
             $train = new Train();
             $train->company = fake()->company();
             $train->departure_station = fake()->city();
             $train->arrival_station = fake()->city();
-            $train->departure_time = fake()->time();
-            $train->arrival_time = fake()->time();
+            $train->departure_date = '2024-02-27';
+            $train->arrival_date = fake()->date();
             $train->number_of_carriages = fake()->numberBetween(5, 20);
             $train->in_time = true;
             $train->deleted = false;
             $train->save();
             
-        }
-    }
-}
+        
+}}

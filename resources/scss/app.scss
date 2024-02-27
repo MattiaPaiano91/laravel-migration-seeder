@@ -1,11 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 
 .card-container{
+    font-family: "Roboto", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
     width: 1200px;
     margin: 0 auto;
     .card{
         margin: 10px;
         width: calc((100% / 4) - 20px);
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+        }
     }
 }
 
