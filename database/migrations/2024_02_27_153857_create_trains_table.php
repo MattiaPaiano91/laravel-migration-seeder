@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('arrival_station', 64);
             $table->time('departure_time');
             $table->time('arrival_time');
-            $table->smallInteger('train_id')->unsigned();
             $table->smallInteger('number_of_carriages')->unsigned();
             $table->boolean('in_time');
             $table->boolean('deleted');
