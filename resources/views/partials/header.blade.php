@@ -19,7 +19,7 @@
 @endphp
 
 <header>
-    <nav>
+    {{-- <nav>
         <ul>
             @foreach ($links as $link)
                 <li>
@@ -29,5 +29,5 @@
                 </li>
             @endforeach
         </ul>
-    </nav>
+    </nav> --}}
 </header>

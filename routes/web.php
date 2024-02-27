@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,16 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $firstName = 'Gino';
-    $lastName = 'Paoli';
-
-
-    return view('welcome', [
-        'firstName' => $firstName,
-        'lastName' => $lastName,
-    ]);
-});
+Route::get('/', [TrainController::class,'index'])->name('home');    
 
 Route::get('/chi-siamo', function () {
     return view('subpages.about');

@@ -12,7 +12,7 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $train = Train::all();
-        return view('welcome', compact('train'));
+        $trains = Train::all();
+        return view('welcome', compact('trains'));
     }
 }
